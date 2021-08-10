@@ -4,7 +4,7 @@ var app = express();
 app.get('/',(req, res)=>{
     res.sendFile(__dirname +"/quote.html");
 })
-app.post('/quote', (req, res)=>{
+app.post('https://qoute-app.herokuapp.com/quote', (req, res)=>{
     var axios = require('axios');
     var data;
     
